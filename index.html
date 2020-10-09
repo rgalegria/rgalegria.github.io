@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ricardo GOMEZ - Dév. WEB & Design</title>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description" content="Développeur Web MERN / SERN Full Stack" />
+        <meta name="description" content="Développeur Web MERN / SERN Full Stack basé à Paris." />
         <meta
             name="keywords"
             content="mern, sern, react, node.js, express.js, mysql, mongodb, sql, développeur web, web designer "
         />
-
-        <title>Ricardo GOMEZ - Dév. WEB & Design</title>
         <link rel="canonical" href="https://rgalegria.github.io/" />
 
         <!-- Favicons-->
@@ -52,7 +51,7 @@
         <meta property="og:url" content="https://rgalegria.github.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Ricardo GOMEZ ALEGRIA" />
-        <meta property="og:description" content="Développeur Web MERN / SERN Full Stack" />
+        <meta property="og:description" content="Développeur Web MERN / SERN Full Stack et Designer." />
         <meta property="og:image" content="https://rgalegria.github.io/assets/ricardo-gomez-alegria-social-media.jpg" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
@@ -61,30 +60,22 @@
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ricardo GOMEZ ALEGRIA" />
-        <meta name="twitter:description" content="Développeur Web MERN / SERN Full Stack" />
+        <meta name="twitter:description" content=Développeur Web MERN / SERN Full Stack et Designer." />
         <meta
             name="twitter:image"
             content="https://rgalegria.github.io/assets/ricardo-gomez-alegria-social-media.jpg"
         />
 
         <!-- Google Analytics -->
-        <!-- <script>
-            (function (i, s, o, g, r, a, m) {
-                i["GoogleAnalyticsObject"] = r;
-                (i[r] =
-                    i[r] ||
-                    function () {
-                        (i[r].q = i[r].q || []).push(arguments);
-                    }),
-                    (i[r].l = 1 * new Date());
-                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m);
-            })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164529869-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            ga("create", "UA-XXXXX-Y", "auto");
-            ga("send", "pageview");
+            gtag("config", "UA-164529869-1");
         </script> -->
     </head>
 
@@ -112,6 +103,7 @@
                                 class="social-nav__link tint"
                                 aria-label="Lien pour linkedin"
                                 href="https://www.linkedin.com/in/ricardoalegria/?locale=fr_FR"
+                                target="_blank"
                             >
                                 <i class="fab fa-linkedin-in social-nav__icon"></i>
                             </a>
@@ -121,6 +113,7 @@
                                 class="social-nav__link tint"
                                 aria-label="Lien pour github"
                                 href="https://github.com/rgalegria/"
+                                target="_blank"
                             >
                                 <i class="fab fa-github icon-size social-nav__icon"></i>
                             </a>
@@ -130,6 +123,7 @@
                                 class="social-nav__link"
                                 aria-label="Lien pour behance"
                                 href="https://www.behance.net/ricardoalegria"
+                                target="_blank"
                             >
                                 <i class="fab fa-behance social-nav__icon"></i>
                             </a>
@@ -139,6 +133,7 @@
                                 class="social-nav__link"
                                 aria-label="Lien pour instagram"
                                 href="https://www.instagram.com/ricardoalegria/"
+                                target="_blank"
                             >
                                 <i class="fab fa-instagram social-nav__icon"></i>
                             </a>
@@ -163,7 +158,7 @@
 
                 <!-- Links Navigation -->
                 <div class="menu">
-                    <ul class="menu__list">
+                    <ul id="links-menu" class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link menu__link--active" href="#home">
                                 <span class="menu__link__text">home</span>
@@ -291,14 +286,14 @@
         <main class="container">
             <!-- Home page -->
             <section id="home" class="page">
-                <article class="home-wrapper">
+                <article class="wrapper home-wrapper">
                     <div class="home-content">
                         <img class="home-content__img" src="/assets/logo.svg" alt="logo" />
                     </div>
-                    <div class="home-block">
-                        <span class="home-block__span">Hello ! Je m’appelle Ricardo,</span>
-                        <h1 class="home-block__title">Dévelopeur web</h1>
-                        <p class="home-block__text">Stack MERN / SERN et Designer</p>
+                    <div class="block home-block">
+                        <span class="block__span home-block__span">Hello ! Je m’appelle Ricardo,</span>
+                        <h1 class="block__title home-block__title">Dévelopeur web</h1>
+                        <p class="block__text home-block__text">Stack MERN / SERN et Designer</p>
                         <div class="home-block__btn">
                             <a class="cta-btn" href="mailto:contact.ricardoalegria@gmail.com">
                                 <span class="cta-btn__text">me contacter</span>
@@ -310,15 +305,23 @@
 
             <!-- About me -->
             <section id="about" class="page">
-                <article class="about-wrapper">
-                    <div class="about-block">
-                        <span class="about-block__span">Mini Bio...</span>
-                        <h2 class="about-block__title">DU DESIGN Au Dév. WEB</h2>
-                        <p class="about-block__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed tincidunt nisi. In vel
-                            malesuada diam. Etiam a aliquam justo, quis aliquam velit. Nam vel nunc lobortis, elementum
-                            sapien a, tincidunt purus. Curabitur auctor imperdiet nulla, sit amet dapibus lectus
-                            pharetra a. Duis vel risus justo.
+                <article class="wrapper about-wrapper">
+                    <div class="block about-block">
+                        <span class="block__span about-block__span">Mini Bio...</span>
+                        <h2 class="block__title about-block__title">Du design au Dév. WEB</h2>
+                        <p class="block__text about-block__text">
+                            Après 4 ans dans le domaine du design et en réalisant les énormes opportunités que
+                            l'industrie technologique offre pour transformer à mieux nos vies pour le mieux, j'ai pris
+                            l'une des meilleures décisions de ma vie. J'ai réorienté ma carrière pour devenir
+                            <strong> développeur web</strong>.<br />
+                            <br />
+                            Cela ne veut pas dire que j’ai quitté le design. C’est grâce à la façon de concevoir une
+                            idee avec le <strong>design thinking</strong> et sa implementation en tant qu'écosystème
+                            numérique qui nous a donné des entreprises comme Airbnb, Uber et Deliveroo pour n'en nommer
+                            que quelques-unes. C'est dans les interactions et les dynamiques humaines que le design
+                            thinking peut innover et créer de la valeur.<br />
+                            <br />
+                            Vous avez un projet ou une idée en tête ? Faite défiler la page vers le bas.
                         </p>
                     </div>
                     <div class="about-content">
@@ -329,17 +332,25 @@
 
             <!-- Skills -->
             <section id="skills" class="center">
-                <article class="skills-wrapper">
-                    <div class="skills-block">
-                        <span class="skills-block__span">Nouveaux défis...</span>
-                        <h2 class="skills-block__title">de nouvelles compétences</h2>
-                        <p class="skills-block__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed tincidunt nisi. In vel
-                            malesuada diam. Etiam a aliquam justo, quis aliquam velit. Nam vel nunc lobortis, elementum
-                            sapien a, tincidunt purus. Curabitur auctor imperdiet nulla, sit amet dapibus lectus
-                            pharetra a. Duis vel risus justo.
+                <article class="wrapper skills-wrapper">
+                    <div class="block skills-block">
+                        <span class="block__span skills-block__span">Nouveaux défis...</span>
+                        <h2 class="block__title skills-block__title">de nouvelles compétences</h2>
+                        <p class="block__text skills-block__text">
+                            Qu'il s'agisse de la <strong>transformation numérique des services</strong> ou en créant des
+                            nouveaux et innovants idées, il est nécessaire de développer le projet de la A à la Z le
+                            plus rapide et fiable possible. Pour cela, je me suis spécialisé dans des technologies clés
+                            afin que votre solution soit développée de façon rapide, évolutive et efficace.<br />
+                            <br />
+                            Le <strong>MERN (MongoDB, Express.js, React et Node) ou SERN Full Stack</strong> permet de
+                            créer des solutions entreprise de petite et moyenne échelle, par exemple un réseau sociaul,
+                            un e-commerce ou une plateforme Web. Je suis également capable de créer l'UX / UI, dès les
+                            maquettes à l'expérience finale.<br />
+                            <br />
+                            Vous voulez voir quelques exemples? Continuez à faire défiler vers le bas :)
                         </p>
                     </div>
+
                     <div class="skills-content">
                         <div class="skill">
                             <div class="skill__grade">
@@ -387,7 +398,7 @@
                                 <span class="skill__text no-visible">MySQL</span>
                             </div>
                             <p class="skill__description">
-                                Paramètrage création profil, publications, commentaires et likes.
+                                Paramètrage des schemas en fonction des besoins, operations CRUD.
                             </p>
                         </div>
                         <!--------------------------------------------------------->
@@ -399,7 +410,9 @@
                             <div class="skill__name">
                                 <span class="skill__text no-visible">MongoDB</span>
                             </div>
-                            <p class="skill__description">Paramètrage création de compte, publication et likes.</p>
+                            <p class="skill__description">
+                                Paramètrage NoSQL en fonction des besoins, operations CRUD.
+                            </p>
                         </div>
                         <!--------------------------------------------------------->
                         <div class="skill">
@@ -410,9 +423,9 @@
                             <div class="skill__name">
                                 <span class="skill__text">Bootstrap</span>
                             </div>
-                            <p class="skill__description">Sites web vitrine responsives et coustomisés au client</p>
+                            <p class="skill__description">Frontend Framework dans la version 4.</p>
                         </div>
-                        <!--------------------------------------------------------->
+
                         <div class="skill">
                             <div class="skill__grade">
                                 <img class="skill__img" src="/assets/circle-bg.png" alt="" />
@@ -442,66 +455,47 @@
                                 <span class="skill__text">JavaScript</span>
                             </div>
                         </div>
-                        <!--------------------------------------------------------->
-                        <div class="skill">
-                            <div class="skill__grade">
-                                <img class="skill__img" src="/assets/circle-bg.png" alt="" />
-                                <i class="fas fa-drafting-compass skill__icon"></i>
-                            </div>
-                            <div class="skill__name">
-                                <span class="skill__text">UX / UI</span>
-                            </div>
-                        </div>
-                        <!--------------------------------------------------------->
-                        <div class="skill">
-                            <div class="skill__grade">
-                                <img class="skill__img" src="/assets/circle-bg.png" alt="" />
-                                <i class="fas fa-search skill__icon"></i>
-                            </div>
-                            <div class="skill__name">
-                                <span class="skill__text">SEO</span>
-                            </div>
-                        </div>
-                        <!--------------------------------------------------------->
-                        <div class="skill">
-                            <div class="skill__grade">
-                                <img class="skill__img" src="/assets/circle-bg.png" alt="" />
-                                <i class="fab fa-github skill__icon"></i>
-                            </div>
-                            <div class="skill__name">
-                                <span class="skill__text">Git/Hub</span>
-                            </div>
-                        </div>
                     </div>
                 </article>
             </section>
 
             <!-- project 1 -->
             <section id="projects" class="center">
-                <article class="project-wrapper">
-                    <div class="project-block">
-                        <span class="project-block__span">Projet Groupomania</span>
-                        <h2 class="project-block__title">Reseau social d’entreprise</h2>
-                        <p class="project-block__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed tincidunt nisi. In vel
-                            malesuada diam. Etiam a aliquam justo, quis aliquam velit. Nam vel nunc lobortis, elementum
-                            sapien a, tincidunt purus. Curabitur auctor imperdiet nulla, sit amet dapibus lectus
-                            pharetra a. Duis vel risus justo.
+                <article class="wrapper project-wrapper">
+                    <div class="block project-block">
+                        <span class="block__span project-block__span">Projet Groupomania</span>
+                        <h2 class="block__title project-block__title">Reseau social d’entreprise</h2>
+                        <p class="block__text project-block__text">
+                            Brief : Créer un réseau social pour permettre aux employés de Groupomania de se connaître
+                            dans un cadre plus informel.<br />
+                            <br />
+                            L’application a été conçue comme une <strong>SPA</strong> avec <strong>React</strong>.
+                            Construite entièrement avec des composants fonctionnels, react-hooks, react-context (session
+                            utilisateur) et react-router. Le backend a été conçu comme une <strong>API REST</strong> en
+                            utilisant <strong>Node + Express</strong> pour gérer les requêtes, l’authentification, les
+                            opérations CRUD et le téléchargement d’images, tout en suivant les
+                            <strong>standards OWASP de sécurité</strong>.
                         </p>
-
                         <ul class="links">
                             <li class="links__item">
-                                <a class="links__link" aria-label="Lien du projet sur github.com" href="#"
+                                <a
+                                    class="links__link"
+                                    aria-label="Lien du projet sur github.com"
+                                    href="https://github.com/rgalegria/Groupomania"
+                                    target="_blank"
                                     ><i class="fab fa-github"></i
                                 ></a>
                             </li>
                             <li class="links__item">
-                                <a class="links__link" aria-label="lien maquette sur figma.com" href="#"
+                                <a
+                                    class="links__link"
+                                    aria-label="lien maquette sur figma.com"
+                                    href="https://www.figma.com/file/X81KYT0UQ7qN5bhqLO7E4S/Groupomania"
+                                    target="_blank"
                                     ><img class="" src="/assets/figma-icon.svg" alt=""
                                 /></a>
                             </li>
                         </ul>
-
                         <ul class="skill-list">
                             <li class="skill-list__item">
                                 <img class="skill-list__img" src="/assets/mysql-icon.svg" alt="" />
@@ -519,12 +513,11 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="phone__surface">
                         <img class="phone__img" src="assets/iphone.png" alt="" />
                         <img
                             class="phone__content"
-                            src="assets/projet-groupomania-ricardo-gomez-developpeur-web-designer.jpg"
+                            src="assets/demo-projet-groupomania-ricardo-gomez-web-developer-designer.gif"
                             alt=""
                         />
                     </div>
@@ -533,53 +526,73 @@
 
             <!-- project 2 -->
             <section class="center">
-                <article class="project-wrapper block-right">
-                    <div class="project-block__right">
-                        <span class="project-block__span">Projet Orinoco - Appareils de Photo Vintage</span>
-                        <h2 class="project-block__title">mvp site web E-commerce</h2>
-                        <p class="project-block__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed tincidunt nisi. In vel
-                            malesuada diam. Etiam a aliquam justo, quis aliquam velit. Nam vel nunc lobortis, elementum
-                            sapien a, tincidunt purus. Curabitur auctor imperdiet nulla, sit amet dapibus lectus
-                            pharetra a. Duis vel risus justo.
+                <article class="wrapper project-wrapper block-right">
+                    <div class="block project-block__right">
+                        <span class="block__span project-block__span">Projet Orinoco</span>
+                        <h2 class="block__title project-block__title">MVP Site Web E-commerce</h2>
+                        <p class="block__text project-block__text">
+                            Brief : Développer le <strong>MVP</strong> pour le <strong>E-commerce</strong> d’appareils
+                            de photo vintage d’Orinoco. <br />
+                            <br />
+                            Le frontend a été développé comme une MPA en utilisant <strong>HTML 5</strong>,
+                            <strong>CSS 3</strong>, <strong>SaSS</strong> et Vanilla <strong>JavaScript</strong>. La
+                            page de la liste de produits ainsi que la page de produit sont générées de façon dynamique
+                            en obtenant les données depuis le serveur. Le backend a été construit avec
+                            <strong>Node.js, Express.js et MongoDB</strong>.
                         </p>
-
                         <ul class="links">
                             <li class="links__item">
-                                <a class="links__link" aria-label="Lien du projet sur github.com" href="#"
+                                <a
+                                    class="links__link"
+                                    aria-label="Lien du projet sur github.com"
+                                    href="https://github.com/rgalegria/orinoco"
+                                    target="_blank"
                                     ><i class="fab fa-github"></i
                                 ></a>
                             </li>
                             <li class="links__item">
-                                <a class="links__link" aria-label="lien maquette sur figma.com" href="#"
+                                <a
+                                    class="links__link"
+                                    aria-label="lien maquette sur figma.com"
+                                    href="https://www.figma.com/file/DAFSLjOfF5Mf98pYLFQ0Es/Orinoco-OC"
+                                    target="_blank"
                                     ><img class="" src="/assets/figma-icon.svg" alt=""
                                 /></a>
                             </li>
                         </ul>
-
                         <ul class="skill-list">
                             <li class="skill-list__item">
-                                <img class="skill-list__img" src="/assets/mysql-icon.svg" alt="" />
+                                <i class="fab fa-node skill-list__icon-alt"></i>
                             </li>
                             <li class="skill-list__item">
                                 <span class="skill-list__text">Express</span>
                                 <i class="fab fa-js skill-list__icon"></i>
                             </li>
                             <li class="skill-list__item">
-                                <span class="skill-list__text">react.js</span>
-                                <i class="fab fa-react skill-list__icon"></i>
+                                <img class="skill-list__img" src="/assets/mongo-icon.svg" alt="" />
                             </li>
                             <li class="skill-list__item">
-                                <i class="fab fa-node skill-list__icon-alt"></i>
+                                <span class="skill-list__text">JavaScript</span>
+                                <i class="fab fa-js skill-list__icon"></i>
+                            </li>
+                            <li class="skill-list__item">
+                                <span class="skill-list__text">HTML</span>
+                                <i class="fab fa-html5 skill-list__icon"></i>
+                            </li>
+                            <li class="skill-list__item">
+                                <span class="skill-list__text">CSS</span>
+                                <i class="fab fa-css3-alt skill-list__icon"></i>
+                            </li>
+                            <li class="skill-list__item">
+                                <i class="fab fa-sass skill-list__icon-alt"></i>
                             </li>
                         </ul>
                     </div>
-
                     <div class="phone__surface">
                         <img class="phone__img" src="assets/iphone.png" alt="" />
                         <img
                             class="phone__content"
-                            src="assets/projet-orinoco-ricardo-gomez-developpeur-web-designer.jpg"
+                            src="assets/demo-projet-orinoco-ricardo-gomez-web-developer-designer.gif"
                             alt=""
                         />
                     </div>
@@ -588,53 +601,57 @@
 
             <!-- project 3 -->
             <section class="center">
-                <article class="project-wrapper">
-                    <div class="project-block">
-                        <span class="project-block__span">Projet Vesper Invest</span>
-                        <h2 class="project-block__title">site web vitrine / seo</h2>
-                        <p class="project-block__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed tincidunt nisi. In vel
-                            malesuada diam. Etiam a aliquam justo, quis aliquam velit. Nam vel nunc lobortis, elementum
-                            sapien a, tincidunt purus. Curabitur auctor imperdiet nulla, sit amet dapibus lectus
-                            pharetra a. Duis vel risus justo.
+                <article class="wrapper project-wrapper">
+                    <div class="block project-block">
+                        <span class="block__span project-block__span">Projet Vesper Invest</span>
+                        <h2 class="block__title project-block__title">site web vitrine + SEO</h2>
+                        <p class="block__text project-block__text">
+                            Brief : Créer un site web <strong>responsive</strong> et son
+                            <strong>référencement</strong> référencement pour la société Vesper Invest à paris. <br />
+                            <br />
+                            Conçu <strong>mobile-first</strong> et <strong>responsive</strong> à partir des maquettes
+                            fournis par le client, le site web a été développé avec <strong>HTML 5</strong>,
+                            <strong>CSS 3</strong>, <strong>SaSS</strong> et <strong>JavaScript</strong>. L’intégration
+                            d’<strong>OpenGraph</strong> et Twitter cards ainsi comme
+                            <strong>l'indexation du site</strong> font parti de l'ensemble du <strong>SEO</strong>. Coté
+                            backend, le site est déployé sur le service de l’hébergeur du client, avec son
+                            <strong>certificat SSL</strong> et en utilisant le
+                            <strong>protocole sécurisé HTTPS</strong>.
                         </p>
-
                         <ul class="links">
                             <li class="links__item">
-                                <a class="links__link" aria-label="Lien du projet sur github.com" href="#"
-                                    ><i class="fab fa-github"></i
+                                <a
+                                    class="links__link"
+                                    aria-label="Lien du projet sur github.com"
+                                    href="https://www.vesperinvest.fr/"
+                                    target="_blank"
+                                    ><i class="fas fa-external-link-alt"></i
                                 ></a>
                             </li>
-                            <li class="links__item">
-                                <a class="links__link" aria-label="lien maquette sur figma.com" href="#"
-                                    ><img class="" src="/assets/figma-icon.svg" alt=""
-                                /></a>
-                            </li>
                         </ul>
-
                         <ul class="skill-list">
                             <li class="skill-list__item">
-                                <img class="skill-list__img" src="/assets/mysql-icon.svg" alt="" />
+                                <span class="skill-list__text">HTML</span>
+                                <i class="fab fa-html5 skill-list__icon"></i>
                             </li>
                             <li class="skill-list__item">
-                                <span class="skill-list__text">Express</span>
+                                <span class="skill-list__text">CSS</span>
+                                <i class="fab fa-css3-alt skill-list__icon"></i>
+                            </li>
+                            <li class="skill-list__item">
+                                <span class="skill-list__text">JavaScript</span>
                                 <i class="fab fa-js skill-list__icon"></i>
                             </li>
                             <li class="skill-list__item">
-                                <span class="skill-list__text">react.js</span>
-                                <i class="fab fa-react skill-list__icon"></i>
-                            </li>
-                            <li class="skill-list__item">
-                                <i class="fab fa-node skill-list__icon-alt"></i>
+                                <i class="fab fa-sass skill-list__icon-alt"></i>
                             </li>
                         </ul>
                     </div>
-
                     <div class="phone__surface">
                         <img class="phone__img" src="assets/iphone.png" alt="" />
                         <img
                             class="phone__content"
-                            src="assets/projet-vesper-invest-ricardo-gomez-developpeur-web-designer.jpg"
+                            src="assets/demo-projet-vesper-ricardo-gomez-web-developer-designer.gif"
                             alt=""
                         />
                     </div>
@@ -643,53 +660,57 @@
 
             <!-- project 4 -->
             <section class="center">
-                <article class="project-wrapper block-right">
-                    <div class="project-block__right">
-                        <span class="project-block__span">Projet Cycle Agency</span>
-                        <h2 class="project-block__title">site web avec bootstrap 4</h2>
-                        <p class="project-block__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed tincidunt nisi. In vel
-                            malesuada diam. Etiam a aliquam justo, quis aliquam velit. Nam vel nunc lobortis, elementum
-                            sapien a, tincidunt purus. Curabitur auctor imperdiet nulla, sit amet dapibus lectus
-                            pharetra a. Duis vel risus justo.
+                <article class="wrapper project-wrapper block-right">
+                    <div class="block project-block__right">
+                        <span class="block__span project-block__span">Projet Cycle Agency</span>
+                        <h2 class="block__title project-block__title">site vitrine bootstrap</h2>
+                        <p class="block__text project-block__text">
+                            Brief : Créer un site web vitrine pour une agence de design dans un délai de temps court.<br />
+                            <br />
+                            Le frontend a été développé de façon responsive en utilisant <strong>Bootstrap 4</strong> et
+                            ses composants pour avoir une bonne expérience utilisateur en fonction du temps disponible
+                            pour son développement.
                         </p>
-
                         <ul class="links">
                             <li class="links__item">
-                                <a class="links__link" aria-label="Lien du projet sur github.com" href="#"
+                                <a
+                                    class="links__link"
+                                    aria-label="Lien du projet sur github.com"
+                                    href="https://github.com/rgalegria/Cycle-Agency"
+                                    target="_blank"
                                     ><i class="fab fa-github"></i
                                 ></a>
                             </li>
                             <li class="links__item">
-                                <a class="links__link" aria-label="lien maquette sur figma.com" href="#"
-                                    ><img class="" src="/assets/figma-icon.svg" alt=""
-                                /></a>
+                                <a
+                                    class="links__link"
+                                    aria-label="Lien du projet sur github.com"
+                                    href="https://rgalegria.github.io/Cycle-Agency/"
+                                    target="_blank"
+                                    ><i class="fas fa-external-link-alt"></i
+                                ></a>
                             </li>
                         </ul>
-
                         <ul class="skill-list">
                             <li class="skill-list__item">
-                                <img class="skill-list__img" src="/assets/mysql-icon.svg" alt="" />
+                                <span class="skill-list__text">HTML</span>
+                                <i class="fab fa-html5 skill-list__icon"></i>
                             </li>
                             <li class="skill-list__item">
-                                <span class="skill-list__text">Express</span>
-                                <i class="fab fa-js skill-list__icon"></i>
+                                <span class="skill-list__text">CSS</span>
+                                <i class="fab fa-css3-alt skill-list__icon"></i>
                             </li>
                             <li class="skill-list__item">
-                                <span class="skill-list__text">react.js</span>
-                                <i class="fab fa-react skill-list__icon"></i>
-                            </li>
-                            <li class="skill-list__item">
-                                <i class="fab fa-node skill-list__icon-alt"></i>
+                                <span class="skill-list__text">Bootstrap</span>
+                                <i class="fab fa-bootstrap skill-list__icon"></i>
                             </li>
                         </ul>
                     </div>
-
                     <div class="phone__surface">
                         <img class="phone__img" src="assets/iphone.png" alt="" />
                         <img
                             class="phone__content"
-                            src="assets/projet-cycle-agency-ricardo-gomez-developpeur-web-designer.jpg"
+                            src="assets/demo-projet-cycle-agency-ricardo-gomez-web-developer-designer.gif"
                             alt=""
                         />
                     </div>
@@ -698,13 +719,13 @@
 
             <!-- contact -->
             <section id="contact" class="center fit">
-                <article class="contact-wrapper">
-                    <div class="contact-block">
-                        <span class="contact-block__span"
+                <article class="wrapper contact-wrapper">
+                    <div class="block contact-block">
+                        <span class="block__span contact-block__span"
                             >Vous avez un projet à concretiser ? Un proposition de travail ?</span
                         >
                         <div class="contact-block__wrapper">
-                            <h4 class="contact-block__title">je suis tout ouïe</h4>
+                            <h4 class="block__title contact-block__title">je suis tout ouïe</h4>
                             <img
                                 class="contact-block__img"
                                 src="/assets/hot-coffee-emoji.png"
@@ -727,7 +748,7 @@
         </footer>
 
         <!-- Javascript -->
-        <!-- <script src="js/app.min.js"></script> -->
-        <script src="js/app.js"></script>
+        <script src="js/app-min.js"></script>
+        <!-- <script src="js/app.js"></script> -->
     </body>
 </html>
